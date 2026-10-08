@@ -1,0 +1,16 @@
+# Python 3.10/3.11; install the CUDA build appropriate to your platform.
+torch==2.5.1
+torchvision==0.20.1
+numpy==2.1.2
+pandas==2.3.1
+scipy==1.15.3
+torch-fidelity==0.3.0
+torchmetrics==1.7.4
+Pillow>=10.0,<12
+tqdm>=4.66,<5
+scikit-learn==1.7.0
+blobfile>=2,<4
+rich>=13,<14
+# Inactive upstream image-restoration branches are not used by these recipes.
+# Their optional packages (lmdb, piq, ipdb, tensorflow) are not required here.
+# wandb is optional; logging defaults to the bundled no-op/disabled path.

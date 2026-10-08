@@ -1,0 +1,71 @@
+{
+  "bbbc": {
+    "train_count": 63781,
+    "test_count": 5120,
+    "seed": 42,
+    "phases": [
+      {
+        "config": "configs/bbbc_a.json",
+        "end_epoch": 90,
+        "world_size": 4,
+        "auxiliary_horizon_epochs": 150
+      },
+      {
+        "config": "configs/bbbc_b.json",
+        "end_epoch": 100,
+        "world_size": 4,
+        "auxiliary_horizon_epochs": 150
+      },
+      {
+        "config": "configs/bbbc_c.json",
+        "end_epoch": 120,
+        "world_size": 3,
+        "auxiliary_horizon_epochs": 150
+      }
+    ]
+  },
+  "jump": {
+    "train_count": 35960,
+    "test_count": 9077,
+    "seed": 42,
+    "phases": [
+      {
+        "config": "configs/jump_e60.json",
+        "end_epoch": 60,
+        "world_size": 8,
+        "auxiliary_horizon_epochs": 140
+      },
+      {
+        "config": "configs/jump_e120.json",
+        "end_epoch": 120,
+        "world_size": 8,
+        "auxiliary_horizon_epochs": 140
+      },
+      {
+        "config": "configs/jump_e140.json",
+        "end_epoch": 140,
+        "world_size": 8,
+        "auxiliary_horizon_epochs": 140
+      }
+    ]
+  },
+  "allen": {
+    "train_count": 6130,
+    "test_count": 1592,
+    "seed": 42,
+    "phases": [
+      {
+        "config": "configs/allen_e80.json",
+        "end_epoch": 80,
+        "world_size": 4,
+        "auxiliary_horizon_epochs": 240
+      },
+      {
+        "config": "configs/allen_e240.json",
+        "end_epoch": 240,
+        "world_size": 8,
+        "auxiliary_horizon_epochs": 240
+      }
+    ]
+  }
+}
